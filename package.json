@@ -1,6 +1,7 @@
 {
   "name": "searchbar",
   "private": true,
+  "homepage": "http://Moolteepass.github.io/TutorialSearch",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
