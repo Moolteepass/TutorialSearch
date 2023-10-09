@@ -1,3 +1,3 @@
 # Hi there!
 
-Enjoy this simple searchbar test
+Enjoy this simple searchbar test!
