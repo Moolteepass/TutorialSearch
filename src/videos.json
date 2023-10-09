@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "How to make contact sheets",
+        "name": "Making contact sheets",
         "date": "2023-05-20",
         "tags": ["Photoshop", "Tutorials"],
         "thumbnail": "./assets/ContactSheets.png",
@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "name": "How to make your own comic book",
+        "name": "Make your own comic book",
         "date": "2023-04-05",
         "tags": ["Photoshop", "Tutorials"],
         "thumbnail": "./assets/ComicBook.png",
@@ -17,7 +17,7 @@
     },
     {
         "id": 3,
-        "name": "Creating cuts and bleeds",
+        "name": "Cuts and bleeds",
         "date": "2023-04-05",
         "tags": ["Photoshop", "Tutorials"],
         "thumbnail": "./assets/CutsAndBleeds.png",
@@ -33,7 +33,7 @@
       },
       {
         "id": 5,
-        "name": "Making Proxies in Premiere",
+        "name": "Making Proxies",
         "date": "2023-07-20",
         "tags": ["Proxy", "Premiere", "Tutorials"],
         "thumbnail": "./assets/MakeProxies.png",
@@ -57,7 +57,7 @@
       },
       {
         "id": 8,
-        "name": "How To: Transfer Footage From A Camera",
+        "name": "How To: Transfer Footage",
         "date": "2023-07-19",
         "tags": ["Media", "Camera", "Photos", "Videos", "Tutorials"],
         "thumbnail": "./assets/TransferFootage.png",
@@ -73,7 +73,7 @@
       },
       {
         "id": 10,
-        "name": "1 Point Perspective Texturing",
+        "name": "1 Point Perspective Textures",
         "date": "2023-07-19",
         "tags": ["Photoshop", "Texture", "Tutorials"],
         "thumbnail": "./assets/OnePointPerspectiveTextures.png",
@@ -81,7 +81,7 @@
       },
       {
         "id": 11,
-        "name": "Premiere For Beginners",
+        "name": "Premiere pro For Beginners",
         "date": "2023-07-19",
         "tags": ["Premiere", "Tutorials", "How To"],
         "thumbnail": "./assets/PremiereProForBeginners.png",
@@ -97,7 +97,7 @@
       },
       {
         "id": 13,
-        "name": "Compositional Rules",
+        "name": "Composition Rules",
         "date": "2023-07-19",
         "tags": ["Photoshop", "Tutorials"],
         "thumbnail": "./assets/CompositionalRules.png",
