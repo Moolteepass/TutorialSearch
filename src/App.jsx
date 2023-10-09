@@ -24,7 +24,7 @@ const App = () => {
   return (
     <div className="app">
       <div className="searchbar">
-        <img className="logo" src="/Assets/MonkeyMedia.jpg" alt="" />
+        <img className="logo" src="public/assets/MonkeyMedia.jpg" alt="" />
         <input
           type="text"
           placeholder="Search..."

@@ -4,7 +4,7 @@
         "name": "How to make contact sheets",
         "date": "2023-05-20",
         "tags": ["Photoshop", "Tutorials"],
-        "thumbnail": "./Assets/ContactSheets.png",
+        "thumbnail": "public/assets/ContactSheets.png",
         "url": "https://go2hy.sharepoint.com/:li:/s/VisualArts/E5khPBkFkGJJiaD2AYN3MFkBBr_cHkiSXZoPW_dZOX9V3w?e=sE8KaE"
     },
     {
@@ -12,7 +12,7 @@
         "name": "How to make your own comic book",
         "date": "2023-04-05",
         "tags": ["Photoshop", "Tutorials"],
-        "thumbnail": "./Assets/ComicBook.png",
+        "thumbnail": "public/assets/ComicBook.png",
         "url": "https://go2hy.sharepoint.com/:li:/s/VisualArts/Eywb7hYTMX5IvqvkIrc5rIYB3YbJ7jjiVmXUsUvsB575Ew?e=yLTpww"
     },
     {
@@ -20,7 +20,7 @@
         "name": "Creating cuts and bleeds",
         "date": "2023-04-05",
         "tags": ["Photoshop", "Tutorials"],
-        "thumbnail": "./Assets/CutsAndBleeds.png",
+        "thumbnail": "public/assets/CutsAndBleeds.png",
         "url": "https://go2hy.sharepoint.com/:li:/s/VisualArts/Eywb7hYTMX5IvqvkIrc5rIYB3YbJ7jjiVmXUsUvsB575Ew?e=yLTpww"
     },
     {
@@ -28,7 +28,7 @@
         "name": "Blender Follow Along 01",
         "date": "2023-07-27",
         "tags": ["Blender", "Tutorial", "Follow Along"],
-        "thumbnail": "./Assets/BlenderFollowAlong01.png",
+        "thumbnail": "public/assets/BlenderFollowAlong01.png",
         "url": "https://tinyurl.com/537e9k5y"
       },
       {
@@ -36,7 +36,7 @@
         "name": "Making Proxies in Premiere",
         "date": "2023-07-20",
         "tags": ["Proxy", "Premiere", "Tutorials"],
-        "thumbnail": "./Assets/MakeProxies.png",
+        "thumbnail": "public/assets/MakeProxies.png",
         "url": "https://go2hy-my.sharepoint.com/:v:/g/personal/jacob_mccormack_haileybury_com_au/ER60Z82ZzkFMvvru0YFqvW4B8fuvD51z-0DvlDSOsbs1Bw?e=hbBbLL"
       },
       {
@@ -44,7 +44,7 @@
         "name": "Syncing Audio and Video",
         "date": "2023-07-19",
         "tags": ["Premiere", "Syncing", "Audio", "Video", "Tutorials"],
-        "thumbnail": "./Assets/SyncingAudio.png",
+        "thumbnail": "public/assets/SyncingAudio.png",
         "url": "https://go2hy-my.sharepoint.com/:v:/g/personal/jacob_mccormack_haileybury_com_au/Ebyx7TmpkadJsOFo2A1WqCEBGNATOTHGPTZt6AXuIT82qQ?e=KAP4U8"
       },
       {
@@ -52,7 +52,7 @@
         "name": "How To: Set Up and Use A Tripod",
         "date": "2023-07-19",
         "tags": ["Media", "Camera", "Tripod", "Tutorials"],
-        "thumbnail": "./Assets/SetupTripod.png",
+        "thumbnail": "public/assets/SetupTripod.png",
         "url": "https://go2hy-my.sharepoint.com/:v:/g/personal/jacob_mccormack_haileybury_com_au/EV1fblTqcKdBi39QgE2WVhUBH3j5pPCE8NoERWpGNyxliQ?e=Sfg49u"
       },
       {
@@ -60,7 +60,7 @@
         "name": "How To: Download Footage From A Camera",
         "date": "2023-07-19",
         "tags": ["Media", "Camera", "Photos", "Videos", "Tutorials"],
-        "thumbnail": "./Assets/TransferFootage.png",
+        "thumbnail": "public/assets/TransferFootage.png",
         "url": "https://go2hy-my.sharepoint.com/:v:/g/personal/jacob_mccormack_haileybury_com_au/EVTKRZ-Jq3ZGq53ro7cOWaQBJcWbUZv02pcE6nH9Pu8WTw?e=Y6MkHQ"
       },
       {
@@ -68,7 +68,7 @@
         "name": "Greenscreen Keying",
         "date": "2023-07-19",
         "tags": ["Premiere", "Tutorials"],
-        "thumbnail": "./Assets/GreenscreenKeying.png",
+        "thumbnail": "./assets/GreenscreenKeying.png",
         "url": "https://go2hy-my.sharepoint.com/:v:/g/personal/jacob_mccormack_haileybury_com_au/EXoVGj7YSPBApghLc0lv0jEBljCs7JlH9VNK3le-13SxuA?e=pbL5BT"
       },
       {
@@ -76,7 +76,7 @@
         "name": "1 Point Perspective Texturing",
         "date": "2023-07-19",
         "tags": ["Photoshop", "Texture", "Tutorials"],
-        "thumbnail": "./Assets/OnePointPerspectiveTextures.png",
+        "thumbnail": "./assets/OnePointPerspectiveTextures.png",
         "url": "https://go2hy-my.sharepoint.com/:v:/g/personal/jacob_mccormack_haileybury_com_au/EXOr6pIIRHFHkZ4q4ZG2F0oBiXcmN8MhwT9yQWcSk5VWGg?e=CkrTL3"
       },
       {
@@ -84,7 +84,7 @@
         "name": "Premiere For Beginners",
         "date": "2023-07-19",
         "tags": ["Premiere", "Tutorials", "How To"],
-        "thumbnail": "./Assets/PremiereProForBeginners.png",
+        "thumbnail": "./assets/PremiereProForBeginners.png",
         "url": "https://go2hy-my.sharepoint.com/:v:/g/personal/jacob_mccormack_haileybury_com_au/EdTD7j88IwRKv7zJWpVNYogBf3ZkLGNNv8ulMAcNU97V4Q?e=ij4CQO"
       },
       {
@@ -92,7 +92,7 @@
         "name": "Folder Structure",
         "date": "2023-07-19",
         "tags": ["Photoshop", "Premiere", "Lightroom", "Blender", "Tutorials"],
-        "thumbnail": "./Assets/FolderStructure.png",
+        "thumbnail": "./assets/FolderStructure.png",
         "url": "https://go2hy-my.sharepoint.com/:v:/g/personal/jacob_mccormack_haileybury_com_au/EckTidh2RudAtZu0CZ1Ycx4BrxIeZKkCKIvBdU1zzxPPHg?e=3d97kO"
       },
       {
@@ -100,7 +100,7 @@
         "name": "Compositional Rules",
         "date": "2023-07-19",
         "tags": ["Photoshop", "Tutorials"],
-        "thumbnail": "./Assets/CompositionalRules.png",
+        "thumbnail": "./assets/CompositionalRules.png",
         "url": "https://go2hy-my.sharepoint.com/:v:/g/personal/jacob_mccormack_haileybury_com_au/ET7ctOkwDm9CqXYoRsogX9YBfmhYSiBBPBIgKV9G3AvJyA?e=cks5Ka"
       }
 ]
