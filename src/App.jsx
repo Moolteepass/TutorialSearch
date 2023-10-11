@@ -48,6 +48,7 @@ const App = () => {
           type="text"
           placeholder="Search..."
           onChange={(e) => setSearch(e.target.value)}
+          autoComplete="false"
         />
       </div>
       <div>
