@@ -52,6 +52,7 @@ td {
 
 .indCard img {
   width: 240px;
+  height: 135px;
   border-radius: 10px;
   padding-bottom: 2px;
   transition: opacity 0.3s ease;
