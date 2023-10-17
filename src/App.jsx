@@ -4,15 +4,16 @@ import GridCard from "./GridCard"
 const App = () => {
   const [search, setSearch] = useState("")
   const [data, setData] = useState([])
+  const fetchUrl =
+    "https://searchbar-images.s3.ap-southeast-2.amazonaws.com/videos.json"
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(
-          "https://searchbar-images.s3.ap-southeast-2.amazonaws.com/videos.json"
-        )
+        const response = await fetch(fetchUrl)
         const jsonData = await response.json()
         setData(jsonData)
+        console.log(fetchUrl)
         console.log(jsonData)
       } catch (error) {
         console.error("Error fetching JSON:", error)
