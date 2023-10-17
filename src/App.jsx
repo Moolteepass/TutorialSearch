@@ -9,7 +9,7 @@ const App = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://gist.githubusercontent.com/Moolteepass/48b8c04f4a9fde8a55db95d991102fc6/raw/videos.json"
+          "https://searchbar-images.s3.ap-southeast-2.amazonaws.com/videos.json"
         )
         const jsonData = await response.json()
         setData(jsonData)
@@ -41,7 +41,7 @@ const App = () => {
       <div className="searchbar">
         <img
           className="logo"
-          src="https://www.dropbox.com/scl/fi/ej49vbjsid4wczwp2ugqv/MonkeyMedia.jpg?rlkey=jat7pjg8d63244j28eidn4m5j&dl=1"
+          src="https://searchbar-images.s3.ap-southeast-2.amazonaws.com/MonkeyMedia.png"
           alt=""
         />
         <input
