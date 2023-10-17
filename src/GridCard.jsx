@@ -1,6 +1,6 @@
 import React from "react"
 import { useState } from "react"
-import loading from "../public/assets/loading.svg"
+import loading from "/assets/loading.svg"
 
 function daysAgo(isoDate) {
   const date = new Date(isoDate)
