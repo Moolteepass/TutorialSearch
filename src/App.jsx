@@ -5,8 +5,7 @@ import loading from "/assets/loading.svg"
 const App = () => {
   const [search, setSearch] = useState("")
   const [data, setData] = useState([])
-  const fetchUrl =
-    "https://searchbar-images.s3.ap-southeast-2.amazonaws.com/videos.json"
+  const fetchUrl = `https://searchbar-images.s3.ap-southeast-2.amazonaws.com/videos.json?${new Date().getTime()}`
 
   useEffect(() => {
     const fetchData = async () => {
