@@ -6,6 +6,7 @@ const App = () => {
   const [data, setData] = useState([])
   const fetchUrl =
     "https://searchbar-images.s3.ap-southeast-2.amazonaws.com/videos.json"
+  const [isImageLoaded, setImageLoaded] = useState(false)
 
   useEffect(() => {
     const fetchData = async () => {
@@ -40,10 +41,12 @@ const App = () => {
   return (
     <div className="app">
       <div className="searchbar">
+        {!isImageLoaded && <img src="/assets/loading.svg" />}
         <img
           className="logo"
           src="https://searchbar-images.s3.ap-southeast-2.amazonaws.com/MonkeyMedia.png"
           alt=""
+          onLoad={() => setImageLoaded(true)}
         />
         <input
           type="text"
