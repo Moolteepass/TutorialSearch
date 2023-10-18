@@ -5,16 +5,26 @@ import loading from "/assets/loading.svg"
 const App = () => {
   const [search, setSearch] = useState("")
   const [data, setData] = useState([])
-  const fetchUrl = `https://searchbar-images.s3.ap-southeast-2.amazonaws.com/videos.json?${new Date().getTime()}`
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(fetchUrl)
-        const jsonData = await response.json()
-        setData(jsonData)
-        console.log(fetchUrl)
-        console.log(jsonData)
+        const baseID = "appSt6oazElA26KGW"
+        const tableName = "videos"
+
+        const url = `https://api.airtable.com/v0/${baseID}/${tableName}`
+
+        fetch(url, {
+          headers: {
+            Authorization:
+              "Bearer patz6FDqRAoEsUCVK.c390a4b41c3e9a632901be7f8a6e2ab6200478752fc4b37971a436bf32744c1d",
+          },
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            setData(data.records.map((record) => record.fields))
+            console.log(data.records.map((record) => record.fields))
+          })
       } catch (error) {
         console.error("Error fetching JSON:", error)
       }
@@ -25,11 +35,13 @@ const App = () => {
   const filteredData = data.filter((data) => {
     return ["name", "tags"].some((field) => {
       if (Array.isArray(data[field])) {
-        return data[field].some((tag) =>
-          tag.toLowerCase().includes(search.toLowerCase())
+        return data[field].some(
+          (tag) => tag && tag.toLowerCase().includes(search.toLowerCase())
         )
       }
-      return data[field].toLowerCase().includes(search.toLowerCase())
+      return (
+        data[field] && data[field].toLowerCase().includes(search.toLowerCase())
+      )
     })
   })
 
