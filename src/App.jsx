@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import GridCard from "./GridCard"
-import loading from "/assets/loading.svg"
+import DarkMode from "./DarkMode"
 
 const App = () => {
   const [search, setSearch] = useState("")
@@ -63,7 +63,9 @@ const App = () => {
           onChange={(e) => setSearch(e.target.value)}
           autoComplete="false"
           id="searchbar"
+          className="searchbar-input"
         />
+        <DarkMode />
       </div>
       <div>
         <GridCard video={sortedAndFilteredData} />

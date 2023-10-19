@@ -1,12 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
 
+:root {
+  --background: rgb(255, 255, 255);
+  --outline: rgb(36, 36, 36);
+  --font-color: rgb(245, 245, 245);
+  --input-color: rgb(36, 36, 36);
+}
+
+.dark-theme {
+  --background: rgb(36, 36, 36);
+  --outline: rgb(245, 245, 245);
+  --font-color: rgb(245, 245, 245);
+  --input-color: whitesmoke;
+}
+
 body,
 h1,
 h2,
 ul,
 p {
+  transition: background 0.5s ease;
   margin: 0;
   padding: 0;
+  background: var(--background);
 }
 
 .app {
@@ -25,12 +41,16 @@ p {
 input {
   padding: 10px;
   border-radius: 0% 50px 50px 0%;
-  border: 1px solid black;
+  border: 1px solid var(--outline);
   display: block;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   outline: none;
+  transition: background-color 0.5s ease;
+  background-color: var(--background);
+  color: var(--input-color);
+  margin-right: 5px;
 }
 
 .tableDiv {
@@ -86,10 +106,15 @@ td {
   display: inline-block;
   border-radius: 10px;
   padding: 2px 8px 2px 8px;
-  color: whitesmoke;
+  transition: color 0.5s ease;
+  color: var(--background);
   font-family: "Montserrat", sans-serif;
   margin-right: 4px;
   margin-bottom: 4px;
+}
+
+.indTag p {
+  color: var(--font-color);
 }
 
 .indDate {
@@ -97,7 +122,8 @@ td {
   display: inline-block;
   border-radius: 10px;
   padding: 2px 8px 2px 8px;
-  color: whitesmoke;
+  transition: color 0.5s ease;
+  color: var(--background);
   font-family: "Montserrat", sans-serif;
   margin-right: 4px;
   margin-bottom: 4px;
@@ -107,8 +133,20 @@ td {
   height: 40px;
   width: 40px;
   border-radius: 100% 0% 0% 100%;
-  border: 1px solid black;
+  border: 1px solid var(--outline);
   padding: 5px;
   z-index: 1;
   margin-right: -1px;
+}
+
+.darkmode {
+  font-size: 40px;
+  color: var(--outline);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--outline);
+  border-radius: 100%;
 }
