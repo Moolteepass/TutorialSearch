@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react"
+import { useState, useEffect } from "react"
+import Airtable from "airtable"
 import GridCard from "./GridCard"
 import DarkMode from "./DarkMode"
 
@@ -8,26 +9,40 @@ const App = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      try {
-        const baseID = "appSt6oazElA26KGW"
-        const tableName = "videos"
+      var base = new Airtable({
+        apiKey:
+          "patz6FDqRAoEsUCVK.c390a4b41c3e9a632901be7f8a6e2ab6200478752fc4b37971a436bf32744c1d",
+      }).base("appSt6oazElA26KGW")
 
-        const url = `https://api.airtable.com/v0/${baseID}/${tableName}`
+      let allRecords = []
 
-        fetch(url, {
-          headers: {
-            Authorization:
-              "Bearer patz6FDqRAoEsUCVK.c390a4b41c3e9a632901be7f8a6e2ab6200478752fc4b37971a436bf32744c1d",
-          },
+      base("videos")
+        .select({
+          fields: ["id", "name", "date", "tags", "thumbnail", "url"],
+          sort: [{ field: "id", direction: "desc" }],
         })
-          .then((response) => response.json())
-          .then((data) => {
-            setData(data.records.map((record) => record.fields))
-            console.log(data.records.map((record) => record.fields))
-          })
-      } catch (error) {
-        console.error("Error fetching JSON:", error)
-      }
+        .eachPage(
+          function page(records, fetchNextPage) {
+            records.forEach(function (record) {
+              allRecords.push(record.fields)
+            })
+            fetchNextPage()
+          },
+          function done(err) {
+            if (err) {
+              console.error(err)
+              return
+            }
+            setData(allRecords)
+            localStorage.setItem("cachedData", JSON.stringify(allRecords))
+            console.log("fetchResult", allRecords)
+          }
+        )
+    }
+    // Load data from localStorage or fetch it
+    if (localStorage.getItem("cachedData") !== null) {
+      console.log("cachedData exists, loading now")
+      setData(JSON.parse(localStorage.getItem("cachedData")))
     }
     fetchData()
   }, [])

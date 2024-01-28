@@ -1,5 +1,6 @@
-import React from "react"
+/* eslint-disable react/prop-types */
 import { useState } from "react"
+import PropTypes from "prop-types"
 import loading from "/assets/loading.svg"
 
 function daysAgo(isoDate) {
@@ -58,6 +59,19 @@ const GridCard = ({ video }) => {
       ))}
     </div>
   )
+}
+
+// Define prop types for GridCard
+GridCard.propTypes = {
+  video: PropTypes.arrayOf(
+    PropTypes.shape({
+      url: PropTypes.string.isRequired,
+      thumbnail: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      tags: PropTypes.arrayOf(PropTypes.string).isRequired, // Explicitly define tags
+      date: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 }
 
 export default GridCard
