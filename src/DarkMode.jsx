@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import "./App.css"
 
 const DarkMode = () => {
-  const [darkMode, setDarkmode] = useState(true)
+  const [darkMode, setDarkmode] = useState(false)
 
   useEffect(() => {
     if (darkMode) {
