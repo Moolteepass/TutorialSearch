@@ -18,7 +18,7 @@ const App = () => {
 
       base("videos")
         .select({
-          fields: ["id", "name", "date", "tags", "thumbnail", "url"],
+          fields: ["id", "name", "date", "tags", "url"],
           sort: [{ field: "id", direction: "desc" }],
         })
         .eachPage(
@@ -69,7 +69,7 @@ const App = () => {
       <div className="searchbar">
         <img
           className="logo"
-          src="https://searchbar-images.s3.ap-southeast-2.amazonaws.com/MonkeyMedia.png"
+          src="https://monkey-media-portfolio-images.s3.ap-southeast-2.amazonaws.com/logo/MonkeyMedia.webp"
           alt=""
         />
         <input

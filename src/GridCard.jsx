@@ -30,7 +30,7 @@ const GridCard = ({ video }) => {
       {video.map((video, index) => (
         /* Link */
         <a
-          href={video.url}
+          href={`https://www.youtube.com/watch?v=${video.url}t=0s`}
           target="_blank"
           rel="noopener noreferrer"
           key={index}
@@ -42,7 +42,7 @@ const GridCard = ({ video }) => {
             )}
             {/* Display Thumbnail */}
             <img
-              src={video.thumbnail}
+              src={`https://i.ytimg.com/vi/${video.url}/mqdefault.jpg`}
               alt={video.name}
               onLoad={() => handleImageLoaded(index)}
               style={{ display: imageLoaded[index] ? "block" : "none" }}
@@ -66,7 +66,6 @@ GridCard.propTypes = {
   video: PropTypes.arrayOf(
     PropTypes.shape({
       url: PropTypes.string.isRequired,
-      thumbnail: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       tags: PropTypes.arrayOf(PropTypes.string).isRequired, // Explicitly define tags
       date: PropTypes.string.isRequired,

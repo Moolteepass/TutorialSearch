@@ -35,13 +35,17 @@ p {
 
 .searchbar {
   display: flex;
+  height: 40px;
   padding-top: 10px;
 }
 
 input {
   padding: 10px;
   border-radius: 0% 50px 50px 0%;
-  border: 1px solid var(--outline);
+  border-left: none;
+  border-right: 2px solid var(--outline);
+  border-top: 2px solid var(--outline);
+  border-bottom: 2px solid var(--outline);
   display: block;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
@@ -79,10 +83,12 @@ td {
 }
 
 .indCard:hover img {
-  opacity: 0.8;
+  filter: brightness(1.1);
+  cursor: pointer;
 }
 
 .indCard:hover {
+  cursor: pointer;
   transform: scale(1.1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -130,23 +136,29 @@ td {
 }
 
 .searchbar img {
-  height: 40px;
-  width: 40px;
+  height: auto;
+  width: 29px;
   border-radius: 100% 0% 0% 100%;
-  border: 1px solid var(--outline);
+  border-left: 2px solid var(--outline);
+  border-top: 2px solid var(--outline);
+  border-bottom: 2px solid var(--outline);
   padding: 5px;
   z-index: 1;
   margin-right: -1px;
 }
 
+.darkmode:hover {
+  cursor: pointer;
+}
+
 .darkmode {
-  font-size: 40px;
+  font-size: 30px;
   color: var(--outline);
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--outline);
+  border: 2px solid var(--outline);
   border-radius: 100%;
 }
